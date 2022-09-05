@@ -1,0 +1,13 @@
+body{
+  background-color: #303030;
+}
+
+.App {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+

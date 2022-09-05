@@ -1,0 +1,19 @@
+{
+  "name": "testing-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --detectOpenHandles"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "supertest": "^6.1.4"
+  },
+  "keywords": [],
+  "description": ""
+}
