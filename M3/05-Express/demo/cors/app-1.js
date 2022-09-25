@@ -7,9 +7,9 @@ app.use(express.static('./public/'));
 
 
 app.get('/response', (req, res, next) => {
-    res.sendFile(path.join(__dirname + '/public/response.html'))
+  res.sendFile(path.join(__dirname + '/public/response.html'))
 })
 
 app.listen(3001, () => {
-    console.log('Port 3001, Ready!')
+  console.log('Port 3001, Ready!')
 });
