@@ -1,12 +1,12 @@
 const fs = require('fs');
 
 function promisifiedReadFile(filename) {
-	return new Promise(function (resolve, reject) {
-		fs.readFile(filename, 'utf8', function (err, data) {
-			if (err) reject(err);
-			else resolve(data);
-		});
-	});
+  return new Promise(function(resolve, reject) {
+    fs.readFile(filename, 'utf8', function(err, data) {
+      if (err) reject(err);
+      else resolve(data);
+    });
+  });
 };
 
 const readFilePromise = (archivo) => {
@@ -19,7 +19,7 @@ const readFilePromise = (archivo) => {
 
 readFilePromise('archivo.txt');
 
-const readFileAsync = async(archivo) => {
+const readFileAsync = async (archivo) => {
   console.log("Log async file: ", await promisifiedReadFile(archivo));
   return "Lectura exitosa";
 }
